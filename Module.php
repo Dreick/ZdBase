@@ -3,7 +3,9 @@ namespace ZdBase;
 
 use Zend\ModuleManager\Feature;
 
-class Module implements Feature\AutoloaderProviderInterface
+class Module implements
+    Feature\AutoloaderProviderInterface,
+    Feature\ServiceProviderInterface
 {
     public function getAutoloaderConfig()
     {
@@ -17,5 +19,10 @@ class Module implements Feature\AutoloaderProviderInterface
                 ),
             ),
         );
+    }
+    
+    public function getServiceConfig()
+    {
+        return include __DIR__ . '/config/services.config.php';
     }
 }
