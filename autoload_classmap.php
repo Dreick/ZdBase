@@ -6,5 +6,4 @@ return array(
   'ZdBase\Module\AbstractModule'             => __DIR__ . '/src/ZdBase/Module/AbstractModule.php',
   'ZdBase\Validator\Doctrine\NoObjectExists' => __DIR__ . '/src/ZdBase/Validator/Doctrine/NoObjectExists.php',
   'ZdBase\Validator\Doctrine\ObjectExists'   => __DIR__ . '/src/ZdBase/Validator/Doctrine/ObjectExists.php',
-  'ZdBase\View\Helper\getRoute'              => __DIR__ . '/src/ZdBase/View/Helper/getRoute.php',
 );
