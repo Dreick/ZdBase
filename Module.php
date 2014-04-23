@@ -5,6 +5,7 @@ use Zend\ModuleManager\Feature;
 
 class Module implements
     Feature\AutoloaderProviderInterface,
+    Feature\ViewHelperProviderInterface,
     Feature\ServiceProviderInterface
 {
     public function getAutoloaderConfig()
@@ -24,5 +25,10 @@ class Module implements
     public function getServiceConfig()
     {
         return include __DIR__ . '/config/services.config.php';
+    }
+    
+    public function getViewHelperConfig()
+    {
+        return include __DIR__ . '/config/view-helpers.config.php';
     }
 }
