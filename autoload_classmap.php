@@ -4,6 +4,7 @@ return array(
   'ZdBase\Module'                            => __DIR__ . '/Module.php',
   'ZdBase\Form\Fieldset\AbstractFieldset'    => __DIR__ . '/src/ZdBase/Form/Fieldset/AbstractFieldset.php',
   'ZdBase\Module\AbstractModule'             => __DIR__ . '/src/ZdBase/Module/AbstractModule.php',
+  'ZdBase\Repository\AbstractRepository'     => __DIR__ . '/src/ZdBase/Repository/AbstractRepository.php',
   'ZdBase\Validator\Doctrine\NoObjectExists' => __DIR__ . '/src/ZdBase/Validator/Doctrine/NoObjectExists.php',
   'ZdBase\Validator\Doctrine\ObjectExists'   => __DIR__ . '/src/ZdBase/Validator/Doctrine/ObjectExists.php',
 );
