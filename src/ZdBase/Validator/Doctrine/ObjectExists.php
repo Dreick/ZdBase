@@ -134,8 +134,8 @@ class ObjectExists extends AbstractValidator
             if(is_array($this->exclude)) {
                 foreach($this->exclude as $i => $exc) {
                     if($exc['value'] !== null) {
-                        $queryBuilder->andWhere('u.' . $exc['field'] . ' != :exclude_' . $num);
-                        $queryBuilder->setParameter('exclude_' . $num, $exc['value']);
+                        $queryBuilder->andWhere('u.' . $exc['field'] . ' != :exclude_' . $i);
+                        $queryBuilder->setParameter('exclude_' . $i, $exc['value']);
                     }
                 }
             }
