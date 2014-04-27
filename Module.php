@@ -15,6 +15,7 @@ class Module implements
         
         AnnotationRegistry::registerAutoloadNamespace($namespace, $lib);
     }
+    
     public function getAutoloaderConfig()
     {
         return array(
