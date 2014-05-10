@@ -9,7 +9,7 @@
  * @author Jérémy Hubert <jeremy.hubert@infogroom.fr>
  * using work of http://groups.google.com/group/doctrine-user/browse_thread/thread/69d1f293e8000a27
  */
-namespace xxx\yyyBundle\Extension\Doctrine;
+namespace ZdBase\Extension\Doctrine;
  
 use Doctrine\ORM\Query\Lexer;
 use Doctrine\ORM\Query\AST\Functions\FunctionNode;
