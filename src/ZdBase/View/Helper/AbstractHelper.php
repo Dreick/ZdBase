@@ -26,7 +26,7 @@ class AbstractHelper extends Helper
      * Set service manager instance
      *
      * @param ServiceManager $serviceManager
-     * @return BreadCrumbsWidget
+     * @return AbstractHelper
      */
     public function setServiceManager(ServiceManager $serviceManager)
     {
