@@ -6,13 +6,11 @@ use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-abstract class AbstractForm extends ProvidesEventsForm implements ServiceLocatorAwareInterface
+class AbstractForm extends ProvidesEventsForm implements ServiceLocatorAwareInterface
 {
     protected $serviceLocator;
     
     protected $entityManager;
-    
-    abstract public function init();
     
     public function setServiceLocator(ServiceLocatorInterface $sl)
     {
