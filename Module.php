@@ -1,12 +1,10 @@
 <?php
 namespace ZdBase;
 
-use Zend\ModuleManager\Feature;
+use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 
-class Module implements
-    Feature\AutoloaderProviderInterface,
-    Feature\ConfigProviderInterface
+class Module implements AutoloaderProviderInterface
 {
     public function init()
     {
@@ -28,10 +26,5 @@ class Module implements
                 ),
             ),
         );
-    }
-    
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
     }
 }
