@@ -34,7 +34,7 @@ class AbstractForm extends ProvidesEventsForm implements ServiceLocatorAwareInte
     public function getEntityManager()
     {
         if(!$this->entityManager instanceof ObjectManager) {
-            $this->setEntityManager($this->getServiceLocator()->get('zdbase_doctrine_em'));
+            $this->setEntityManager($this->getServiceLocator()->get('Doctrine\ORM\EntityManager'));
         }
         
         return $this->entityManager;
