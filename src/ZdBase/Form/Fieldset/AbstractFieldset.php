@@ -7,13 +7,11 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use DoctrineModule\Stdlib\Hydrator\DoctrineObject as DoctrineHydrator;
 
-abstract class AbstractFieldset extends Fieldset implements ServiceLocatorAwareInterface
+class AbstractFieldset extends Fieldset implements ServiceLocatorAwareInterface
 {
     protected $serviceLocator;
     
     protected $entityManager;
-    
-    abstract public function init();
     
     public function setDoctrineHydrator($classEntity)
     {
